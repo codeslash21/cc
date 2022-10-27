@@ -12,7 +12,7 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 int main()
 {
-    int a[1000][1000], b[1000][1000], res[1000][1000]={0}, i, j;
+    int a[1000][1000], b[1000][1000], res[1000][1000]={0}, i, j, k;
     for(i=0;i<1000;i++)
         for(j=0;j<1000;j++){
             a[i][j]=rand()%100;
