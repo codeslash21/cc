@@ -12,10 +12,16 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 int main()
 {
-    int a[1000][1000], i, j;
+    int a[1000][1000], b[1000][1000], res[1000][1000]={0}, i, j;
+    for(i=0;i<1000;i++)
+        for(j=0;j<1000;j++){
+            a[i][j]=rand()%100;
+            b[i][j]=rand()%100;
+        }
     for(i=0;i<1000;i++)
         for(j=0;j<1000;j++)
-            a[i][j]=rand()%100;
+            for(k=0;k<1000;k++)
+                res[i][j]+=a[i][k]*b[k][j];
 
     return 0;
 }
